@@ -19,6 +19,7 @@
   "homepage": "https://github.com/crapthings/industrial-classification#readme",
   "dependencies": {
     "jsonfile": "^5.0.0",
+    "lodash": "^4.17.10",
     "traverse": "^0.6.6",
     "tree-crawl": "^1.0.5"
   }
