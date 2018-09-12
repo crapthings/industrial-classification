@@ -14,8 +14,12 @@ async function test() {
       _node.name = node.title
       _node.category = this.path[0]
       _node.code = node.key
+      _node.comment = node.comment
       if (_node.code) {
         _node.parentCode = _node.code.substring(0, _node.code.length - 1)
+        if (_node.parentCode.length == 1) {
+          _node.parentCode = _node.category
+        }
         const c1 = _node.code.substring(0, 2)
         const c2 = _node.code.substring(0, 3)
         const c3 = _node.code.substring(0, 4)
