@@ -15,6 +15,7 @@ async function test() {
       _node.category = this.path[0]
       _node.code = node.key
       _node.comment = node.comment
+      _node.range = node.range
       if (_node.code) {
         _node.parentCode = _node.code.substring(0, _node.code.length - 1)
         if (_node.parentCode.length == 1) {
